@@ -1,0 +1,11 @@
+name: "Self Service Servers"
+icons:
+  - "https://cdn-icons-png.flaticon.com/512/5968/5968875.png"
+  - "https://kubiya-public-20221113173935726800000003.s3.us-east-1.amazonaws.com/botArtboard+4.png"
+  - "https://cdn-icons-png.flaticon.com/512/2175/2175193.png"
+description: "AI-powered assistant for handling server curfew override requests through Microsoft Teams or Slack with ServiceNow integration. It provides autonomous server management with comprehensive audit trails and compliance tracking, allowing authorized users to start EC2 instances for specific applications while maintaining full security and audit compliance."
+secrets:
+  - name: ServiceNow Password
+    description: "ServiceNow password for authentication. This should be the password for the ServiceNow user account configured in the teammate."
+    to_env: SERVICENOW_PASSWORD
+    to_var: SERVICENOW_PASSWORD
